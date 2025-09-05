@@ -11,6 +11,10 @@ public class AttestationUtils {
         throw new RuntimeException("Stub!");
     }
 
+    public Iterable<byte[]> attestKey(String alias, byte[] challenge) {
+        throw new RuntimeException("Stub!");
+    }
+
     public Iterable<byte[]> attestDevice(AttestParameterSpec spec) {
         throw new RuntimeException("Stub!");
     }
