@@ -193,7 +193,7 @@ class HomeViewModel(
                 includeProps, uniqueIdIncluded, idFlags, useSak)
 
         if (canSak)
-            Log.e(AppApplication.TAG, "zain: SAK OK!", e)
+            Log.d(AppApplication.TAG, "zain: SAK OK!")
 
         attestationData.postValue(result)
     }
