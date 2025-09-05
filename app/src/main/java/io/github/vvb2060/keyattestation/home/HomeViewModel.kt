@@ -192,6 +192,9 @@ class HomeViewModel(
         val result = attestationRepository.attest(reset, useAttestKey, useStrongBox,
                 includeProps, uniqueIdIncluded, idFlags, useSak)
 
+        if (canSak)
+            Log.e(AppApplication.TAG, "zain: SAK OK!", e)
+
         attestationData.postValue(result)
     }
 
